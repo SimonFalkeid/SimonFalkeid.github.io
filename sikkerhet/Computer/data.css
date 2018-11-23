@@ -23,7 +23,7 @@ article {
 
 #ram {
     position: relative;
-    width: 30%;
+    width: 25%;
     left: 510px;
 }
 
@@ -31,4 +31,39 @@ article {
     position: relative;
     width: 20%;
     left: 510px;
+}
+
+#mus {
+    position: absolute;
+    width: 30%;
+    left: 510px;
+    top: 70px;
+}
+
+#tastatur {
+    position: absolute;
+    width: 40%;
+    left: 510px;
+    top: 250px;
+}
+
+#skjerm {
+    position: absolute;
+    width: 30%;
+    left: 510px;
+    top: 430px;
+}
+
+#nettverk {
+    position: absolute;
+    width: 30%;
+    left: 510px;
+    top: 600px;
+}
+
+footer {
+    position: absolute;
+    top: 1800px;
+    font-size: 200%;
+    right: 20px;
 }
