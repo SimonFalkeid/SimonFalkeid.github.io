@@ -1,0 +1,34 @@
+body {
+    background-color: whitesmoke;
+}
+
+article {
+    position: absolute;
+    width: 500px;
+}
+
+#hovedkort {
+    position: absolute;
+    top: 90px;
+    left: 510px;
+    width: 20%;
+}
+
+#cpu {
+    position: relative;
+    left: 510px;
+    width: 20%;
+   
+}
+
+#ram {
+    position: relative;
+    width: 30%;
+    left: 510px;
+}
+
+#ssd {
+    position: relative;
+    width: 20%;
+    left: 510px;
+}
