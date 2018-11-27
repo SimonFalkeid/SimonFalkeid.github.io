@@ -2,8 +2,33 @@ body {
     background: whitesmoke;
 }
 
+#grad {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    width: 30%;
+    text-align: center;
+    color: white;
+    font-size: 300%;
+    font-family: serif;
+    background-image: linear-gradient(to right, black, aqua, black);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border: solid black 4px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 4px gray;
+}
+
+main {
+    position: absolute;
+    text-align: center;
+    top: 200px;
+}
+
 p {
     width: 800px;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 a {
