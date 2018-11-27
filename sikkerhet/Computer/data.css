@@ -62,8 +62,8 @@ article {
 }
 
 footer {
-    position: absolute;
-    top: 1800px;
-    font-size: 200%;
+    position: fixed;
+    bottom: 10px;
     right: 20px;
+    font-size: 200%;
 }

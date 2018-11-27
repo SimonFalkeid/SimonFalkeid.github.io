@@ -1,0 +1,18 @@
+body {
+    background: whitesmoke;
+}
+
+p {
+    width: 800px;
+}
+
+a {
+    font-size: 120%;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 150%;
+}
