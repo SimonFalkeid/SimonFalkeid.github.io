@@ -27,7 +27,7 @@ body {
     position: relative;
     width: 20px;
     height: 20px;
-    border: solid yellow 3px;
+    border: solid yellow 2px;
 }
 
 .fjes:nth-child(n + 11) {
@@ -186,7 +186,7 @@ body {
  }
 
  .bart {
-     border: solid yellow 3px;
+     border: solid yellow 2px;
      width: 20px;
      height: 20px;
      position: relative;
