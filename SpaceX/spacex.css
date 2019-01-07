@@ -24,6 +24,8 @@ body {
     border: solid black 2px;
     border-radius: 5px;
     animation: landing 5s ease-out forwards;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
 }
 
 @keyframes landing {
