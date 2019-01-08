@@ -123,3 +123,50 @@ body {
 @keyframes hoyre {
     100% {transform-origin: bottom; transform: rotate(130deg);}
 }
+
+#alien {
+    position: absolute;
+    top: 642px;
+    left: 300px;
+    border: solid green 2px;
+    background-color: green;
+    height: 100px;
+    width: 40px;
+}
+
+#alien::after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 15px;
+    background-color: green;
+    border: solid green 1px;
+    border-radius: 3px;
+    position: absolute;
+    right: -30px;
+    top: 10px;
+}
+
+#alien::before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 15px;
+    background-color: green;
+    border: solid green 1px;
+    border-radius: 3px;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+}
+
+#head {
+    position: relative;
+    top: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: green;
+    border: solid green 1px;
+    border-radius: 100px;
+    left: -1px;
+}
