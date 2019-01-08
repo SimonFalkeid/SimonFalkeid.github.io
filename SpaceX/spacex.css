@@ -20,7 +20,7 @@ body {
     top: -200px;
     left: calc(50vw - 20px);
     width: 40px;
-    background-color: whitesmoke;
+    background-image: linear-gradient(grey, whitesmoke, whitesmoke);
     border: solid black 2px;
     border-radius: 5px;
     animation: landing 5s ease-out forwards;
