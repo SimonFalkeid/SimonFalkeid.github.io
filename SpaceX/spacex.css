@@ -5,7 +5,7 @@ body {
 #space {
     position: relative;
     background-color: darkblue;
-    background-image: linear-gradient(darkblue, blue);
+    background-image: linear-gradient(darkblue, blue, );
     height: 90vh;
 }
 
@@ -145,6 +145,7 @@ body {
     position: absolute;
     right: -30px;
     top: 10px;
+    transform: rotate(25deg);
 }
 
 #alien::before {
@@ -158,6 +159,7 @@ body {
     position: absolute;
     left: -30px;
     top: 10px;
+    transform: rotate(-25deg);
 }
 
 #head {
