@@ -4,7 +4,7 @@ class HomeBar extends HTMLElement {
     const title = this.getAttribute("title") || "Demo";
     const username = this.getAttribute("username") || "Ole";
     const info = this.getAttribute("info") || "4 ledige";
-    const menu = this.getAttribute("menu") || "Home";
+    const menu = this.getAttribute("menu") || "";
     this._root = this.attachShadow({ mode: "open" });
     this._root.innerHTML = `
       <div id="home">
