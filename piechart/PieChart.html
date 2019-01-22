@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="PieChart.js"></script>
+    <link rel="stylesheet" href="PieChart.css">
+    <title>PieChart</title>
+</head>
+<body>
+    <h1>Dagen Måltid</h1>
+    <div id="halla">
+    
+    <pie-chart heading="Frokost" id="frokost" width="300"></pie-chart>
+    <script>
+    let frokost = document.getElementById("frokost");
+    frokost.init ([
+        {label:"Ost", color:"red", value: "183"}, 
+        {label:"Brød", color:"blue", value:"682.5"}, 
+        {label:"Melk", color:"whitesmoke", value:"172"},
+        {label:"Syltetøy", color:"green", value:"556"},
+        {label:"Egg", color:"yellow", value:"75"}
+    ])
+    </script> 
+    
+    <pie-chart id="middag" width="300"></pie-chart>
+    <script>
+    let middag = document.getElementById("middag");
+    middag.init ([
+        {label:"Kjøttkaker", color:"red", value: "597"}, 
+        {label:"Poteter", color:"blue", value:"320"}, 
+        {label:"Vann", color:"whitesmoke", value:"0"},
+        {label:"Saus", color:"green", value:"165"},
+        {label:"Ertestuing", color:"yellow", value:"134"}
+    ])
+    </script>
+
+    <pie-chart id="kvelds" width="300"></pie-chart>
+    <script>
+    let kvelds = document.getElementById("kvelds");
+    kvelds.init ([
+        {label:"Ost", color:"red", value: "183"}, 
+        {label:"Brød", color:"blue", value:"682.5"}, 
+        {label:"Melk", color:"whitesmoke", value:"172"},
+        {label:"Syltetøy", color:"green", value:"556"},
+        {label:"Egg", color:"yellow", value:"75"}
+    ])
+    </script>
+    </div>
+</body>
+</html>

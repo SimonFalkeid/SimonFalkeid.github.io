@@ -1,0 +1,9 @@
+#halla {
+display: flex;
+flex-wrap: wrap;
+margin: 20px;
+}
+
+#kaker * {
+    margin: 20px;
+}
