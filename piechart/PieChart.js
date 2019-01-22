@@ -1,5 +1,4 @@
 // @ts-check
-class PieChart extends HTMLElement {
     constructor() {
         super();
         let width = 250;
