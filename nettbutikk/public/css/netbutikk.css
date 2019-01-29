@@ -1,0 +1,75 @@
+body{
+    background-image: url(../media/bakgrunn.png);
+    background-size: cover;
+}
+
+#varer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: solid black 2px;
+    height: 700px;
+}
+
+#mcd1 {
+    background-image: url(../media/bigmac.png);
+    background-size: cover;
+    margin: 50px;
+    padding: 30px;
+    border: solid black 2px;
+}
+
+#mcd2 {
+    background-image: url(../media/chickensalsa.png);
+    background-size: cover;
+    margin: 50px;
+    padding: 30px;
+    border: solid black 2px;
+}
+
+#mcd3 {
+    background-image: url(../media/pommes.png);
+    background-size: 100%;
+    border: solid black 2px;
+    margin: 50px;
+    padding: 30px;
+}
+
+#mcd4 {
+    background-image: url(../media/cola.png);
+    background-size: cover;
+    border: solid black 2px;
+    margin: 50px;
+    padding: 30px;
+}
+
+#mcd5 {
+    background-image: url(../media/bigmac.png);
+    background-size: cover;
+    border: solid black 2px;
+    margin: 50px;
+    padding: 30px;
+}
+
+#mcd6 {
+    background-image: url(../media/bigmac.png);
+    background-size: cover;
+    border: solid black 2px;
+    margin: 50px;
+    padding: 30px;
+}
+
+#mcd7 {
+    background-image: url(../media/bigmac.png);
+    background-size: cover;
+    border: solid black 2px;
+    padding: 30px;
+    margin: 50px;
+}
+
+#mcd8 {
+    background-image: url(../media/bigmac.png);
+    background-size: cover;
+    border: solid black 2px;
+    margin: 50px;
+    padding: 30px;
+}
