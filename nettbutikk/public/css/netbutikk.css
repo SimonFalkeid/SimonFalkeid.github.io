@@ -15,29 +15,10 @@ body{
     text-decoration: none;
 }
 
-li {
-    background-color: #555;
-    color: #f1f1f1;
-    text-decoration: none;
-}
-
-
 #meny:hover {
     opacity: 1;
-    color: #555;
-    background-color: #f1f1f1;
-    
 }
 
-a {
-    text-decoration: none;
-    color: #555;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #f1f1f1;
-}
 
 #varer {
     display: grid;
