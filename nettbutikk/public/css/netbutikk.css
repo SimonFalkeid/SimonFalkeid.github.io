@@ -1,6 +1,7 @@
 body{
     background-image: url(../media/bakgrunn.png);
     background-size: cover;
+  
 }
 
 #meny {
@@ -115,29 +116,16 @@ li a:hover {
     margin: 50px;
     padding: 30px;
 }
-
-{
-    box-sizing: border-box;
-  }
   
-  .row::after {
-    content: "";
-    clear: both;
-    display: block;
-  }
   
   [class*="col-"] {
     float: left;
     padding: 15px;
   }
   
-  html {
-    font-family: "Lucida Sans", sans-serif;
-  }
-  
   .header {
-    background-color: #9933cc;
-    color: #ffffff;
+    background-color: purple;
+    color: white;
     padding: 15px;
   }
   
@@ -145,36 +133,34 @@ li a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-image: url(../media/bakgrunn.png);
   }
   
   .menu li {
     padding: 8px;
     margin-bottom: 7px;
-    background-color: #33b5e5;
-    color: #ffffff;
+    background-color: lightblue;
+    color: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
   
   .menu li:hover {
-    background-color: #0099cc;
+    background-color: aqua;
   }
   
   .aside {
-    background-color: #33b5e5;
+    background-color: lightblue;
     padding: 15px;
-    color: #ffffff;
+    color: white;
     text-align: center;
     font-size: 14px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
-  
-  .footer {
-    background-color: #0099cc;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
+
+  .aside:hover {
+    background-color: aqua;
   }
+  
   
   /* For desktop: */
   .col-1 {width: 8.33%;}
