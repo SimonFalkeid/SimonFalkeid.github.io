@@ -8,25 +8,41 @@
              border: solid gray 1px;
              margin: 1em;
            }
+           div.korg {
+             display:none;
+           }
+           h4 {
+            text-align:center;
+          }
          </style>
+         <h4>Handlekorg</h4>
          <div class="liste">
-           <slot></slot>
+           <slot name="liste"></slot>
+           <button>Kjøp varene</button>
          </div>
       `;
   
-    class DBSelect extends HTMLElement {
+    class DBKorg extends HTMLElement {
       constructor() {
         super();
+        this.datalist =[];
         this.starting = true;
         this.table = "";
         this.fields = "";
         this.where = "";
+        this.buy = false;
         this._root = this.attachShadow({ mode: "open" });
         this.shadowRoot.appendChild(template.content.cloneNode(true));
       }
   
       static get observedAttributes() {
-        return ["table", "fields", "where"];
+        return ["table", "fields", "where","heading"];
+      }
+  
+      get valgt() {
+        let id = this.getAttribute("liste");
+        let div = document.getElementById(id);
+        return div.querySelectorAll("input:checked");
       }
   
       connectedCallback() {
@@ -34,6 +50,9 @@
       }
   
       attributeChangedCallback(name, oldValue, newValue) {
+        if (name === "heading") {
+          this._root.querySelector('h4').innerHTML = newValue;
+        }
         if (name === "fields") {
           this.fields = newValue.replace(/[^a-z0-9,]+/g, '');
         }
@@ -45,19 +64,20 @@
         }
         if (this.starting && this.table && this.where && this.fields) {
           let sql = `select ${this.fields} from ${this.table} where ${this.where}`;
-          let slot = this._root.querySelector('slot');
+          let slot = this._root.querySelector('div.liste slot');
           this.starting = false;
           slot.addEventListener('slotchange', async (e) => {
-            let data = await this.select(sql);
+            let data = localStorage.getItem("korg");
             let id = this.getAttribute("liste");
             //*
-            if (data.results) {
+            if (data) {
+              let items = JSON.parse(data);
               let target = document.getElementById(id);
               if (target) {
                 let pattern  = target.innerHTML;
                 console.log(pattern);
                 let s = "";
-                data.results.forEach(linje => {
+                items.forEach((linje,idx) => {
                   s += supplant(pattern,linje);
                 });
                 target.innerHTML = s;
@@ -67,7 +87,6 @@
           });
           
         }
-  
         function supplant(s, o) {
           return s.replace(/{([^{}]*)}/g, function (a, b) {
             var r = o[b];
@@ -75,8 +94,6 @@
           });
         }
       }
-  
-  
   
       async select(sql = "") {
         let init = {
@@ -91,13 +108,12 @@
         const address = window.location.protocol + '//'
           + window.location.hostname + ':'
           + window.location.port;
-        //fetch(address + "/runsql", init).catch(e => console.log(e.message));
         const response = await fetch(address + "/runsql", init).catch(e => console.log(e.message));
         let res = await response.json();
         return res;
       }
     }
   
-    window.customElements.define("db-select", DBSelect);
+    window.customElements.define("db-korg", DBKorg);
   })();
   

@@ -1,29 +1,15 @@
 {
-  "name": "audunhauge.github.io",
+  "name": "webserver",
   "version": "1.0.0",
-  "description": "it1 og it2",
-  "main": "git.js",
-  "dependencies": {
-    "esdoc": "^1.0.4",
-    "esdoc-standard-plugin": "^1.0.0",
-    "markdown": "^0.5.0"
-  },
-  "devDependencies": {},
+  "description": "test",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/audunhauge/audunhauge.github.io.git"
-  },
-  "keywords": [
-    "it1",
-    "it2"
-  ],
-  "author": "Audun Hauge",
+  "author": "audun",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/audunhauge/audunhauge.github.io/issues"
-  },
-  "homepage": "https://github.com/audunhauge/audunhauge.github.io#readme"
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg-promise": "^8.5.1"
+  }
 }
