@@ -6,7 +6,7 @@ function setup() {
     let homebar = document.querySelector('home-bar');
     if (homebar) {
         homebar.setAttribute("menu",
-            `<i class="material-icons">menu</i>
+            `<i class="material-icons">Menu</i>
         <ul>
           <li>Komplett
           <li>Hovedkort

@@ -16,10 +16,10 @@ class DigitalTime extends HTMLElement {
        </div>
        <style>
        #clock {
-         width: 60px;
+         width: 70px;
          background-color: rgba(32,166,231,.8);
          color:white;
-         margin: 0.5em;
+         margin: 2px;
          padding: 5px;
          border-radius: 3px;
        }
