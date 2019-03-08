@@ -11,7 +11,7 @@ function setup() {
           <li>Komplett
           <li>Hovedkort
           <li>CPU
-          <li>SSD
+          <li>Harddisk
           <li>Operativsystem
         </ul>
         `)

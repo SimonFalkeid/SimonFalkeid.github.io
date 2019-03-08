@@ -1,0 +1,89 @@
+body {
+    background-image: url(../media/bakgrunn.png);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 10px darkblue;
+}
+
+#ytre {
+    position: relative;
+    width: 1400px;
+    height: 300px;
+    top: 50px;
+}
+
+#indre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.inder {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.inder:nth-child(1) {
+    background-image: url(../media/1tb.png);
+    background-size: 400px;
+    background-color: black;
+    background-position-x: -60px;
+}
+
+.inder:nth-child(2) {
+    background-image: url(../media/8tb.png);
+    background-size: 400px;
+    background-color: black;
+    background-position-x: -60px;
+}
+
+.inder:nth-child(3) {
+    background-image: url(../media/wd10tb.png);
+    background-size: 400px;
+    background-color: black;
+    background-position-x: -60px;
+}
+
+.inder:nth-child(4) {
+    background-image: url(../media/s10tb.png);
+    background-size: 400px;
+    background-color: black;
+    background-position-x: -60px;
+}
+
+.inder:nth-child(5) {
+    background-image: url(../media/14tb.png);
+    background-size: 400px;
+    background-color: black;
+    background-position-x: -60px;
+}
+
+#yter {
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    top: 50px;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.halla {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+}
