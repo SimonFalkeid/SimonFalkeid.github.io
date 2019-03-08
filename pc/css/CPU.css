@@ -1,11 +1,11 @@
 body {
     background-image: url(../media/bakgrunn.png);
-    background-size: fill;
+    background-size: cover;
 }
 
 h1 {
     text-align: center;
-    color: red;
+    color: deepskyblue;
     font-size: 30px;
     text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 10px darkblue;
 }
@@ -33,21 +33,18 @@ h1 {
 .inder:nth-child(1) {
     background-image: url(../media/i3.png);
     background-size: 350px;
-    background-color: black;
     background-position-x: -40px;
 }
 
 .inder:nth-child(2) {
     background-image: url(../media/i5.png);
     background-size: 270px;
-    background-color: black;
     background-position-y: 10px;
 }
 
 .inder:nth-child(3) {
     background-image: url(../media/i7.png);
     background-size: 400px;
-    background-color: black;
     background-position-x: -60px;
     background-position-y: 10px;
 }
@@ -55,7 +52,6 @@ h1 {
 .inder:nth-child(4) {
     background-image: url(../media/i9.png);
     background-size: 350px;
-    background-color: black;
     background-position-x: -40px;
     background-position-y: -30px;
 }
@@ -63,7 +59,6 @@ h1 {
 .inder:nth-child(5) {
     background-image: url(../media/amd.png);
     background-size: 270px;
-    background-color: black;
     background-position-y: 10px;
 }
 
@@ -114,21 +109,18 @@ h1 {
 .inder2:nth-child(1) {
     background-image: url(../media/trident.png);
     background-size: 350px;
-    background-color: black;
     background-position-x: -40px;
 }
 
 .inder2:nth-child(2) {
     background-image: url(../media/kingston.png);
     background-size: 270px;
-    background-color: black;
     background-position-y: 10px;
 }
 
 .inder2:nth-child(3) {
     background-image: url(../media/hyperx2.png);
     background-size: 400px;
-    background-color: black;
     background-position-x: -60px;
     background-position-y: 10px;
 }
@@ -136,7 +128,6 @@ h1 {
 .inder2:nth-child(4) {
     background-image: url(../media/Hyperx1.png);
     background-size: 350px;
-    background-color: black;
     background-position-x: -40px;
     background-position-y: -30px;
 }
@@ -144,7 +135,6 @@ h1 {
 .inder2:nth-child(5) {
     background-image: url(../media/rgb.png);
     background-size: 270px;
-    background-color: black;
     background-position-y: 10px;
 }
 

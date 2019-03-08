@@ -5,7 +5,7 @@ body {
 
 h1 {
     text-align: center;
-    color: red;
+    color: deepskyblue;
     font-size: 30px;
     text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 10px darkblue;
 }
@@ -33,35 +33,30 @@ h1 {
 .inder:nth-child(1) {
     background-image: url(../media/1tb.png);
     background-size: 400px;
-    background-color: black;
     background-position-x: -60px;
 }
 
 .inder:nth-child(2) {
     background-image: url(../media/8tb.png);
     background-size: 400px;
-    background-color: black;
     background-position-x: -60px;
 }
 
 .inder:nth-child(3) {
     background-image: url(../media/wd10tb.png);
     background-size: 400px;
-    background-color: black;
     background-position-x: -60px;
 }
 
 .inder:nth-child(4) {
     background-image: url(../media/s10tb.png);
     background-size: 400px;
-    background-color: black;
     background-position-x: -60px;
 }
 
 .inder:nth-child(5) {
     background-image: url(../media/14tb.png);
     background-size: 400px;
-    background-color: black;
     background-position-x: -60px;
 }
 

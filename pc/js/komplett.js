@@ -10,7 +10,7 @@ function setup() {
         <ul>
           <li>Komplett
           <li>Hovedkort
-          <li>CPU
+          <li>CPU og RAM
           <li>Harddisk
           <li>Operativsystem
         </ul>

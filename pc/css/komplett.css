@@ -5,7 +5,7 @@ body {
 
 h1 {
     text-align: center;
-    color: red;
+    color: deepskyblue;
     font-size: 30px;
     text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 10px darkblue;
 }
@@ -19,7 +19,7 @@ h1 {
 
 #indre {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
 }
@@ -31,33 +31,26 @@ h1 {
 }
 
 .inder:nth-child(1) {
-    background-image: url(../media/MSIZ370.png);
-    background-size: 270px;
-    background-color: black;
+    background-image: url(../media/bluepc.png);
+    background-size: 300px;
+    background-position-x: 10px;
 }
 
 .inder:nth-child(2) {
-    background-image: url(../media/ASUS.png);
-    background-size: 270px;
-    background-color: black;
+    background-image: url(../media/redpc.png);
+    background-size: 390px;
 }
 
 .inder:nth-child(3) {
-    background-image: url(../media/GB.png);
-    background-size: 270px;
-    background-color: black;
+    background-image: url(../media/purplepc.png);
+    background-size: 400px;
+    background-position-x: -20px;
+    
 }
 
 .inder:nth-child(4) {
-    background-image: url(../media/raspberry.png);
-    background-size: 270px;
-    background-color: black;
-}
-
-.inder:nth-child(5) {
-    background-image: url(../media/MSIarctic.png);
-    background-size: 270px;
-    background-color: black;
+    background-image: url(../media/omenpx.png);
+    background-size: 320px;
 }
 
 #yter {
@@ -69,7 +62,7 @@ h1 {
 
 #info {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
 }
