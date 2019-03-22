@@ -1,0 +1,36 @@
+body{
+    background-color: deepskyblue;
+}
+
+:root {
+    --bredde: 20px;
+    --antall: calc(600 / (var(--bredde) + 2px));
+}
+
+#brett {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    width: calc((var(--bredde) + 2px) * 30);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.rute {
+    width: var(--bredde);
+    height: var(--bredde);
+    border: solid black 1px;
+}
+
+div.rute.kryss:after {
+    content: "√";
+    position: relative;
+    top: 2px;
+    left: 3px;
+}
+
+div.rute.runding:after {
+    content: "";
+    position: relative;
+    top: -2px;
+    left: 1px;
+}
