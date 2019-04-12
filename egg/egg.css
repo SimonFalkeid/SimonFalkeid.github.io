@@ -1,0 +1,280 @@
+body {
+    background-color: yellow;
+
+}
+
+#egg {
+    display: block;
+    width: 150px;
+    height: 200px;
+    border: solid black 2px;
+    background-image: linear-gradient(to top, lightgray, white);
+    border-radius: 150px;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    animation: egg 1s 14s linear forwards;
+}
+
+#crack1 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 75px;
+    top: 100px;
+    transform: rotate(-45deg);
+    opacity: 0;
+    animation: crack1 7s 1s linear forwards;
+}
+
+#crack2 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 70px;
+    top: 48px;
+    transform: rotate(30deg);
+    opacity: 0;
+    animation: crack2 7s 4s linear forwards;
+}
+
+#crack3 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 73px;
+    top: 60px;
+    transform: rotate(45deg);
+    opacity: 0;
+    animation: crack3 7s 4s linear forwards;
+}
+
+#crack4 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 92px;
+    top: 30px;
+    transform: rotate(-30deg);
+    opacity: 0;
+    animation: crack4 7s 7s linear forwards;
+}
+
+#crack5 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 68px;
+    top: -70px;
+    transform: rotate(-40deg);
+    opacity: 0;
+    animation: crack5 7s 7s linear forwards;
+}
+
+#crack6 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 89px;
+    top: -100px;
+    transform: rotate(50deg);
+    opacity: 0;
+    animation: crack6 7s 10s linear forwards;
+}
+
+#crack7 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 50px;
+    top: -90px;
+    transform: rotate(60deg);
+    opacity: 0;
+    animation: crack7 7s 10s linear forwards;
+}
+
+#crack8 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 109px;
+    top: -160px;
+    transform: rotate(-30deg);
+    opacity: 0;
+    animation: crack8 7s 12s linear forwards;
+}
+
+#crack9 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 30px;
+    top: -158px;
+    transform: rotate(150deg);
+    opacity: 0;
+    animation: crack9 7s 12s linear forwards;
+}
+
+#crack10 {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 30px;
+    border: solid black 0.5px;
+    background-color: black;
+    position: relative;
+    left: 67px;
+    top: -250px;
+    transform: rotate(30deg);
+    opacity: 0;
+    animation: crack10 7s 12s linear forwards;
+}
+
+@keyframes crack1{
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes crack2{
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes crack3{
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes crack4{
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes crack5{
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes crack6{
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes crack7{
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes crack8{
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes crack9{
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes crack10
+% {opacity: 1;}{
+    100% {opacity: 1;}
+}
+
+@keyframes egg {
+    100% {opacity: 0;}
+}
+
+#chick {
+    display: block;
+    background-color: gold;
+    width: 75px;
+    height: 75px;
+    border: solid black 2px;
+    position: absolute;
+    top: 580px;
+    left: 235px;
+    border-radius: 2px;
+    opacity: 0;
+    animation: chick 1s 15s linear forwards;
+}
+
+#chick::before {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: solid black 2px;
+    background-color: gold;
+    position: relative;
+    top: -20px;
+    left: 45px;
+    border-radius: 12px;
+    opacity: 0;
+    animation: chick1 1s 15s linear forwards;
+}
+
+#chick::after {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: solid black 1px;
+    background-color: black;
+    border-radius: 1000px;
+    position: relative;
+    top: -50px;
+    left: 70px;
+    opacity: 0;
+    animation: chick2 1s 15s linear forwards;
+}
+
+@keyframes chick {
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes chick1 {
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes chick2 {
+    1% {opacity: 1;}
+    100% {opacity: 1;}
+}
