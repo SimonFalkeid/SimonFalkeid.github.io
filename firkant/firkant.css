@@ -1,0 +1,124 @@
+#firkant {
+    display: block;
+    content: "";
+    border: solid red 1px;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+}
+
+.firkant01 {
+    display: block;
+    content: "";
+    border: solid green 1px;
+    margin: 10%;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    align-content: right;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+}
+
+.firkant02 {
+    display: block;
+    content: "";
+    border: solid green 1px;
+    margin: 10%;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    position: absolute;
+    width: 65%;
+    height: 65%;
+}
+
+.firkant03 {
+    display: block;
+    content: "";
+    border: solid green 1px;
+    margin: 10%;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    align-content: right;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+}
+
+.firkant04 {
+    display: block;
+    content: "";
+    border: solid green 1px;
+    margin: 10%;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    align-content: right;
+    position: absolute;
+    width: 55%;
+    height: 55%;
+}
+
+.firkant05 {
+    display: block;
+    content: "";
+    border: solid green 1px;
+    margin: 10%;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    align-content: right;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.firkant06 {
+    display: block;
+    content: "";
+    border: solid green 1px;
+    margin: 10%;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    align-content: right;
+    position: absolute;
+    width: 45%;
+    height: 45%;
+}
+
+.firkant07 {
+    display: block;
+    content: "";
+    border: solid green 1px;
+    margin: 10%;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    align-content: right;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+}
+
+.firkant08 {
+    display: block;
+    content: "";
+    border: solid green 1px;
+    margin: 10%;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    align-content: right;
+    position: absolute;
+    width: 35%;
+    height: 35%;
+}
+
+.firkant09 {
+    display: block;
+    content: "";
+    border: solid green 1px;
+    margin: 10%;
+    margin-left: 25%;
+    margin-bottom: 25%;
+    align-content: right;
+    position: absolute;
+    width: 30%;
+    height: 30%;
+}
