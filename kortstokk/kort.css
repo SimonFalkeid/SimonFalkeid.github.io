@@ -1,0 +1,44 @@
+#kortstokk {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ruterA {
+    display: block;
+    border: solid black 5px;
+    width: 57mm;
+    height: 89mm;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.ruter {
+    display: block;
+    border: solid red 1px;
+    background: red;
+    position: relative;
+    width: 18mm;
+    height: 18mm;
+    top: 50px;
+    left: 18mm;
+    transform: rotate(45deg);
+}
+
+.ruterA span:nth-child(1) {
+    color: red;
+    position: relative; 
+    left: 4mm; 
+    top: 2mm; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 75px;
+}
+
+.ruterA span:nth-child(2) {
+    color: red; 
+    position: relative; 
+    left: 30mm; 
+    top: 65mm; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 75px;
+    transform: rotate(180deg);
+}
