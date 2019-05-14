@@ -1,41 +1,82 @@
 :root {
-    --bredde: 20px;
+    --bredde:20px;
+}
+
+body {
+    background: linear-gradient(to right, rgb(0, 4, 40), rgb(0, 78, 146));
+}
+
+#spill {
+    position: absolute;
+    top: 30px;
+    left: 350px;
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    font-family: serif;
+    background: linear-gradient(to right, rgb(0, 195, 255), rgb(100, 255, 28));
+    text-shadow: 2px 2px 2px black;
+    border: solid black 3px;
+    border-radius: 20px;
+    // box-shadow: 15px 15px 4px gray;
 }
 
 #poeng {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-evenly;
     width: calc(16 * (var(--bredde) + 2px));
-    background-color: gainsboro;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
 }
 
-#poeng>div {
-    width: calc(3 * (var(--bredde) + 2px));
-    height: 64px;
+#poeng > div {
     color: red;
-    background-color: black;
-    font-size: 3em;
+    font-size: 2em;
 }
-
 
 #brett {
+    width: calc(16 * (var(--bredde) + 2px));
+    height: calc(16 * (var(--bredde) + 2px));
+    border: solid gray 1px;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    width: calc(16 * (var(--bredde) + 2px));
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
 }
 
-.rute {
+div.rute {
+    position: relative;
     width: var(--bredde);
     height: var(--bredde);
-    background-color: grey;
     margin: 1px;
-    color: grey;
-    font-size:1.1em;
-    text-align: center;
+    background-color: gray;
+    color: red;
 }
 
-.rute.synlig {
-    color:red;
+div.rute.visible {
     background-color: lightgray;
+}
+
+div.visible.rute:after {
+    content: attr(data-n);
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+div.visible.rute[data-n="0"]:after {
+    content: " ";
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+div.visible.rute[data-n="8"]:after {
+    content: "O";
+    position: absolute;
+    left:0;
+    top:0;
 }
