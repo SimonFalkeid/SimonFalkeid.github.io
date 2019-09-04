@@ -1,0 +1,45 @@
+body {
+    background-color: tan;
+}
+
+#frame {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    border: solid black 2px;
+    padding: 20px;
+}
+
+#hoyde {
+    width: 100px;
+    height: 30px;
+}
+
+#vekt {
+    width: 100px;
+    height: 30px;
+    margin-left: 14px;
+}
+
+#beregn {
+    margin-left: 95px;
+}
+
+#navn {
+    width: 100px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+img {
+    display: none;
+}
+
+img.vismeg {
+    display: inline;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 300px;
+    height: 300px;
+}

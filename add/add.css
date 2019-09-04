@@ -1,0 +1,19 @@
+body {
+    background-color: burlywood;
+}
+
+#calc {
+    font-size: 2em;
+}
+
+#tall1{
+    width: 100px;
+    height: 30px;
+    font-size: 1em;
+}
+
+#tall2{
+    width: 100px;
+    height: 30px;
+    font-size: 1em;
+}
