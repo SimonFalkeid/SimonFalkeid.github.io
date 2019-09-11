@@ -1,0 +1,42 @@
+body {
+    background-image: linear-gradient(to right,lightseagreen, aquamarine);
+}
+
+.brikke {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:  26px;
+    height: 12px;
+    background-color: magenta;
+    border: solid black 1px;
+}
+
+#brett {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    border: solid blue 3px;
+    margin: 2em;
+}
+
+.ball {
+    position: relative;
+    top: 416px;
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border: solid black 1px;
+    background-color: red;
+}
+
+.plate {
+    position: relative;
+    top: 450px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 10px;
+    border: solid black 1px;
+    background-color: black;
+}
