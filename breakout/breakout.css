@@ -29,6 +29,7 @@ body {
     border-radius: 100px;
     border: solid black 1px;
     background-color: red;
+    transition: 50ms;
 }
 
 .plate {
@@ -39,4 +40,5 @@ body {
     height: 10px;
     border: solid black 1px;
     background-color: black;
+    transition: 50ms;
 }
