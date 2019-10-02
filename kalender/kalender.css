@@ -8,19 +8,19 @@ body {
     border: solid black 1px;
     padding: 1px;
     text-align: center;
-    background-color: aliceblue;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 2px 2px 2px black;
 }
 
 .nav:active {
     box-shadow: none;
-    transform: translate(2px 2px);
+    transform: translate(2px, 2px);
 }
 
-#datoer, #mm, #yy, #ukedager {
-   display: grid;
-   width: 20em;
+#datoer,
+#mm, #yy, #ukedager {
+    display: grid;
+    width: 20em;
 }
 
 #datoer {
@@ -28,29 +28,32 @@ body {
 }
 
 .dato {
-    width: 16px;
-    border: solid black 1px;
-    margin-top: 18px;
     text-align: center;
-    margin-left: 14px;
+    border: solid 1px black;
+    margin:2px;
+    padding: 2px;
 }
 
-#mm, #yy {
+#mm,
+#yy {
     grid-template-columns: 1fr 6fr 1fr;
     margin: 2px;
 }
-
-#ukedager > div, #year, #month {
+#ukedager > div,
+#year, #month {
     text-align: center;
 }
 
 #ukedager {
     grid-template-columns: repeat(7, 1fr);
-    margin-top: 1em;
 }
 
-#kalender {
+#calender {
     width: 30em;
     margin-left: auto;
     margin-right: auto;
+}
+
+div.hidden {
+    opacity:0;
 }
