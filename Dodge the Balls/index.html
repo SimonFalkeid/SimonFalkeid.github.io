@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="background.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="Homebar.js"></script>
+    <script src="game.js"></script>
+    <title>Dodge the Balls</title>
+
+</head>
+
+<body>
+    <home-bar id="header" heading="DODGE THE BALLS" username="Poeng" poeng="HEI"> </home-bar>
+
+    <div id="start">
+        <div class="kant">
+            <h1>DODGE THE BALLS</h1>
+            <p>Spillet der du ikke må være borti de andre ballene!</p>
+            <p>Trykk på start spill for å starte eventyret</p>
+            <P>Bruk musen til å bevege deg</P>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="50" value="1" class="slider" id="myRange">
+                <p>Antall: <span id="show"></span></p>
+            </div>
+            <span id="startknapp" class='start-btn'>START</span>
+        </div>
+
+    </div>
+
+
+    <div id="melding" class="kant_melding">
+    </div>
+    <div id="poengTavle" class="poeng_tavle"></div>
+
+    <canvas id="canvas">
+
+    </canvas>
+
+
+
+
+
+    <script>
+        setup();
+    </script>
+    
+    
+</body>
+
+</html>

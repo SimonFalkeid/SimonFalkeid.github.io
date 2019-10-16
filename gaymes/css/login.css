@@ -1,0 +1,44 @@
+body {
+    background-image: linear-gradient(to right,lightseagreen, aquamarine);
+}
+
+#skjema {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    border: solid black 2px;
+    padding: 20px;
+    background-image: linear-gradient(to right,lightseagreen, aquamarine);
+}
+
+#brukernavn {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    border: solid black 1px;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+
+#passord {
+    width: 100px;
+    height: 30px;
+    margin-left: 46px;
+    border: solid black 1px;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+
+#registrer {
+    width: 100px;
+    height: 30px;
+    margin-left: 40px;
+}
+
+#gaymes {
+    width: 100px;
+    height: 30px;
+    margin-left: 40px;
+    position: relative;
+    top: 200px;
+}
