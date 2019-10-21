@@ -4,11 +4,7 @@ function setup() {
 
     var slider = document.getElementById("myRange");
     var output = document.getElementById("show");
-    output.innerHTML = slider.value; // Display the default slider value
-    // var output2 = document.getElementById("showDiff");
-    // output2.innerHTML = slider.value;
-
-    // Update the current slider value (each time you drag the slider handle)
+    output.innerHTML = slider.value;
     slider.oninput = function () {
         output.innerHTML = this.value;
     }
@@ -40,7 +36,7 @@ function setup() {
         poeng = 0;
         started = true;
 
-        var canvas = document.querySelector('canvas'); //@ts-check 
+        var canvas = document.querySelector('canvas'); 
 
         var c = canvas.getContext('2d');
 
@@ -62,7 +58,6 @@ function setup() {
             '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
             '#FF3380', '#CCCC00', '#66E64D'];
 
-        // utility functions
 
         function randomIntFromRange(min, max) {
             return Math.floor(Math.random() * (max - min + 1) + min);
@@ -113,29 +108,22 @@ function setup() {
             var xDist = otherParticle.x - particle.x;
             var yDist = otherParticle.y - particle.y;
 
-            // Prevent accidental overlap of particles
             if (xVelocityDiff * xDist + yVelocityDiff * yDist >= 0) {
 
-                // Grab angle between the two colliding particles
                 var angle = -Math.atan2(otherParticle.y - particle.y, otherParticle.x - particle.x);
 
-                // Store mass in var for better readability in collision equation
                 var m1 = particle.mass;
                 var m2 = otherParticle.mass;
 
-                // Velocity before equation
                 var u1 = rotate(particle.velocity, angle);
                 var u2 = rotate(otherParticle.velocity, angle);
 
-                // Velocity after 1d collision equation
                 var v1 = { x: u1.x * (m1 - m2) / (m1 + m2) + u2.x * 2 * m2 / (m1 + m2), y: u1.y };
                 var v2 = { x: u2.x * (m1 - m2) / (m1 + m2) + u1.x * 2 * m2 / (m1 + m2), y: u2.y };
 
-                // Final velocity after rotating axis back to original location
                 var vFinal1 = rotate(v1, -angle);
                 var vFinal2 = rotate(v2, -angle);
 
-                // Swap particle velocities for realistic bounce effect
                 particle.velocity.x = vFinal1.x;
                 particle.velocity.y = vFinal1.y;
 
@@ -144,7 +132,6 @@ function setup() {
             }
         }
 
-        // Event Listeners
         addEventListener('mousemove', function (event) {
             mouse.x = event.clientX;
             mouse.y = event.clientY - 60;
@@ -188,13 +175,11 @@ function setup() {
                     _this.velocity.y = -_this.velocity.y;
                 }
 
-                // mouse colliton- detection
 
                 if (distance(mouse.x, mouse.y, _this.x, _this.y) < 50 && _this.opacity < 0.4 || circle1.y - circle1.radius <= 0 || circle1.y + circle1.radius >= canvas.height || circle1.x - circle1.radius <= 0 || circle1.x + circle1.radius >= canvas.width) {
 
                     _this.opacity += 0.02;
                     started = false;
-                    //canvas.style.cursor = "auto";
                     poengTavle.style.display = "none";
                     melding.style.display = "block";
                     melding.innerHTML = `
@@ -252,12 +237,9 @@ function setup() {
             this.draw = function () {
                 c.beginPath();
                 c.arc(_this.x, _this.y, _this.radius, 0, Math.PI * 2, false);
-                // c.save();
-                // c.globalAlpha = _this.opacity;
                 c.fill();
                 c.fillStyle = _this.color;
                 c.restore();
-                //c.strokeStyle = _this.color;
                 c.stroke();
                 c.closePath();
             };

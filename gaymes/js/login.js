@@ -10,8 +10,8 @@ function setup() {
     function lagreData() {
         let brukernavn = inpBrukeravn.value;
         let passord = inpPassord.value;
-        let info = {brukernavn,passord};
-        localStorage.setItem(brukernavn,JSON.stringify(info));
+        let info = { brukernavn, passord };
+        localStorage.setItem(brukernavn, JSON.stringify(info));
     }
 
 }
