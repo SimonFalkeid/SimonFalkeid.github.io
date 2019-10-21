@@ -15,3 +15,9 @@ function setup() {
     }
 
 }
+/*
+la brukernavn være verdien til brukernavn inputen
+la passord være verdien til passord inputen
+la info være brukernavn og passord
+Plaser i localStorage, ved brukernavn og info
+*/

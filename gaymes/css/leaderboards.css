@@ -1,0 +1,10 @@
+.poengtavle {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+    border: 3px solid green;
+    background: rgb(133,215,153);
+    text-align: center;
+}
