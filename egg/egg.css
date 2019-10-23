@@ -211,8 +211,8 @@ body {
     100% {opacity: 1;}
 }
 
-@keyframes crack10
-% {opacity: 1;}{
+@keyframes crack10 {
+    1% {opacity: 1;}
     100% {opacity: 1;}
 }
 
