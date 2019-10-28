@@ -146,7 +146,6 @@ function setup() {
 
         slider = document.getElementById("myRange");
 
-        // Objects
         function Partikkel(x, y, radius, color) {
             var _this = this;
             this.x = x;
@@ -213,7 +212,7 @@ function setup() {
                             `
                         }
                         else {
-                            alert("viser ikke poeng med mindre du har 50 baller")
+                            alert("viser ikke poeng med mindre du har 25 baller")
                         }
                     }
 
@@ -273,7 +272,6 @@ function setup() {
             }
         }
 
-        // Animation Loop
         function animate() {
             if (started) {
                 requestAnimationFrame(animate);
@@ -281,6 +279,7 @@ function setup() {
             c.clearRect(0, 0, canvas.width, canvas.height);
             poeng++;
             header.setAttribute("username", `Poeng:${Math.floor(poeng / 10)}`);
+
 
             particles.forEach(function (particle) {
                 particle.update(particles);
