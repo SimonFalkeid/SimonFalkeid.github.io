@@ -1,0 +1,14 @@
+body {
+    background-color: darkcyan;
+}
+
+#main {
+    color:green;
+}
+ 
+canvas {
+    width: 500px;
+    height: 500px;
+    border: solid gray 1px;
+    background-color: aqua;
+}
