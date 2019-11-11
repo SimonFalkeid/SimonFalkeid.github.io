@@ -2,7 +2,39 @@ body {
     background-color: burlywood;
 }
 
+#skjema {
+    position: absolute;
+   left: 600px;
+    border: solid black 2px;
+    padding: 20px;
+    background-image: linear-gradient(to right,bisque, bisque);
+}
+
+#mat {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    border: solid black 1px;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+
+#kcal {
+    width: 100px;
+    height: 30px;
+    margin-left: 43px;
+    border: solid black 1px;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+
+#button {
+    width: 100px;
+    height: 30px;
+    margin-left: 75px;
+    margin-top: 5px;
+}
+
 #diagram {
     border: solid black 1px;
 }
-
