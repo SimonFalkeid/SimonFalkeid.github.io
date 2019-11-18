@@ -20,6 +20,7 @@ class Sprite {
         this.h = h;
         this.r = 0;
     }
+
     render() {
         this.div.style.transform = `translate(${this.x}px,${this.y}px) rotate(${this.r}rad)`;
     }
@@ -28,11 +29,12 @@ class Sprite {
         let a = this;
         let b = andre;
         return a.x > b.x - a.w &&
-            a.x < b.x + b.w &&
-            a.y > b.y - a.h &&
-            a.y < b.y + b.h;
+               a.x < b.x + b.w &&
+               a.y > b.y - a.h &&
+               a.y < b.y + b.h;
     }
 }
+
 class Maur extends Sprite {
     constructor(div, x, y, w, h, v) {
         super(div, x, y, w, h);
@@ -71,7 +73,6 @@ class Finger extends Sprite {
 }
 
 
-
 const alleMaur = [];
 
 function setup() {
@@ -83,7 +84,7 @@ function setup() {
     setInterval(animate, 40);
 
     function animate() {
-        if (alleMaur.length < 100) {
+        if (alleMaur.length < 10) {
             let div = document.createElement("div");
             div.className = "maur";
             divGame.appendChild(div);
