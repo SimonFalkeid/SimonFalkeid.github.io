@@ -1,0 +1,55 @@
+Kravfpesifikasjon
+
+Hensikt
+    De på IT skal kunne få god oversikt på 
+    maskinparken til lærerene
+
+
+Funksjonelle krav
+    1. Velger lærer
+    2. Får se info om deres Mac
+
+    3. Velger maskin (årstall/hd/versjon)
+    4. Får en lsite over lærere som har slik maskin
+
+    5. Sortert liste over siste service
+
+    6. Legge inn feilmelding på en maskin
+        6.1 Mangler program
+        6.2 Mangler opplæring
+        6.3 Mangler minne
+        6.4 Mangler ledig hd plass
+
+    7. Hvem mangler strøm?
+
+
+Wireframe
+    1. Startvindu
+
+    Velg lærer|________\/_|
+
+    2. Ved valg av lærer vises info om maskin
+        Lærernavn   : Ole Olsen
+        OS-versjon  : mojave 14.3
+        Minne       : 8 GB
+        hd          : 120 GB, 37 GB ledig
+        Modell      : macPro 2015
+
+    3. Skriv inn data om lærermaskin
+        Lærernavn   : Ole Olsen
+        OS-versjon  : mojave 14.3
+        Minne       : 8 GB
+        hd          : 120 GB, 37 GB ledig
+        Modell      : macPro 2015
+            |Lagre|
+
+
+Pseudocode
+    3. Skriv inn data
+        les navn
+        les os
+        les minne
+        les hd total
+        les hd ledig
+        les modell
+        Lagre leste data i en array eller arrays

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="scene.css">
+    <script src="scene.js"></script>
+    <title>Scene</title>
+</head>
+<body>
+    <div id="registrer">
+        <div><label>Navn<input type="text" id="navn"></label></div>
+        <div><label>Kjønn<input type="text" id="kjonn"></label></div>
+        <div><label>Høyde (cm)<input type="number" id="hoyde"></label></div>
+        <div><label>Posisjon x<input type="number" id="posx"></label></div>
+        <div><label>Posisjon y<input type="number" id="posy"></label></div>
+        <div><button id="lagre">Lagre</button></div>
+    </div>
+
+    <br>
+
+    <div id="divMain">
+        <canvas id="tegning" width="800" height="600"></canvas>
+    </div>
+
+    <script>
+        setup();    
+    </script>
+</body>
+</html>
