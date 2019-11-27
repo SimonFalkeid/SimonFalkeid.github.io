@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="heis.css">
+    <script src="heis.js"></script>
+    <title>Heiskort</title>
+</head>
+<body>
+    <div id="registrer">
+        <div><label>Navn<input type="text" id="navn"></label></div>
+        <div><label>Alder<input type="number" id="alder"></label></div>
+        <div><label>Antall dager (1-7)<input type="number" id="dager"></label></div>
+        <div><button id="beregn">Bestill</button></div>
+    </div>
+
+    <div id="heiskort">
+        <div id="info">
+            <div id="name">Navn: </div>
+            <div id="age">Alder: </div>
+            <div id="days">Antall dager: </div>
+            <br>
+            <div id="pris">Pris: </div>
+        </div>
+    </div>
+
+    <script>
+        setup();    
+    </script>
+</body>
+</html>

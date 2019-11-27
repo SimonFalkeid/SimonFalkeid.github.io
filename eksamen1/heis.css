@@ -1,0 +1,52 @@
+:root {
+    --Skjema-bredde: 20em;
+    --Input-bredde: 30%;
+}
+
+#registrer {
+    width: var(--Skjema-bredde);
+    border: solid gray 1px;
+    border-radius: 5px;
+    box-shadow: 3px 3px black;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+div {
+    position: relative;
+    padding: 2px;
+}
+
+label > input {
+    position: absolute;
+    right: 0px;
+    width: var(--Input-bredde);
+}
+
+button {
+    font-size: 0.9em; 
+}
+
+#heiskort {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    height: 500px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-image: url(ski.png);
+}
+
+#info {
+    position: relative;
+    top: 260px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: lightblue;
+    opacity: 0.7;
+    
+}
