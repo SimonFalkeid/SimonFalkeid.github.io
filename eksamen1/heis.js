@@ -8,6 +8,8 @@ function setup() {
     let divAge = document.getElementById("age");
     let divDays = document.getElementById("days");
     let divPris = document.getElementById("pris");
+    let divAvslag = document.getElementById("avslag");
+    let divMelding = document.getElementById("melding");
 
     let btnBeregn = document.getElementById("beregn");
 
@@ -25,6 +27,9 @@ function setup() {
             pris = 200 * dager;
             if (pris > 999) {
                 pris = 1000;
+                // @ts-ignore
+                divAvslag.style.opacity = 1;
+                divMelding.innerHTML = "Du fikk " + (200*dager-1000) + ",- avslag"
             }
             divName.innerHTML = "Navn: " + `<span style="color:red;">${navn}</span>`;
             divAge.innerHTML = "Alder: " + `<span style="color:red;">${alder}</span>`;
@@ -34,6 +39,9 @@ function setup() {
             pris = 100 * dager;
             if (pris > 499) {
                 pris = 500;
+                // @ts-ignore
+                divAvslag.style.opacity = 1;
+                divMelding.innerHTML = "Du fikk " + (100*dager-500) + ",- avslag"
             }
             divName.innerHTML = "Navn: " + `<span style="color:red;">${navn}</span>`;
             divAge.innerHTML = "Alder: " + `<span style="color:red;">${alder}</span>`;

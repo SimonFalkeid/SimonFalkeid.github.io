@@ -48,5 +48,16 @@ button {
     border-radius: 10px;
     background-color: lightblue;
     opacity: 0.7;
-    
+}
+
+#avslag {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    opacity: 0;
+    width: 200px;
+    height: 150px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: magenta;
 }
