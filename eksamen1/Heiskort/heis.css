@@ -1,3 +1,7 @@
+body {
+    background: url(../Hytte/bilder/menybilde.jpg);
+}
+
 :root {
     --Skjema-bredde: 20em;
     --Input-bredde: 30%;
@@ -17,14 +21,14 @@ div {
     padding: 2px;
 }
 
-label > input {
+label>input {
     position: absolute;
     right: 0px;
     width: var(--Input-bredde);
 }
 
 button {
-    font-size: 0.9em; 
+    font-size: 0.9em;
 }
 
 #heiskort {
@@ -36,6 +40,7 @@ button {
     border: solid black 1px;
     border-radius: 10px;
     background-image: url(ski.png);
+    box-shadow: 3px 3px black;
 }
 
 #info {
@@ -59,5 +64,48 @@ button {
     height: 150px;
     border: solid black 1px;
     border-radius: 10px;
-    background-color: magenta;
+    background-color: deepskyblue;
+}
+
+#melding {
+    position: relative;
+    top: 65px;
+    width: 200px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: fantasy;
+    opacity: 0;
+}
+
+#hytte {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    opacity: 0;
+    width: 200px;
+    height: 150px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: deepskyblue;
+}
+
+#leie {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    padding: 5px;
+    border: 1px solid #333;
+    position: relative;
+    top: 45px;
+    left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
