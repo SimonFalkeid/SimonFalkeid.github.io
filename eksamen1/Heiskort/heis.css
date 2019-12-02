@@ -67,6 +67,15 @@ button {
     background-color: deepskyblue;
 }
 
+@keyframes rotate {
+    50% {
+        rotate: 180deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
 #melding {
     position: relative;
     top: 65px;

@@ -36,7 +36,7 @@ function setup() {
             if (pris > 999) {
                 pris = 1000;
                 // @ts-ignore
-                divAvslag.style.opacity = 0.7;
+                divAvslag.style.opacity = 0.9;
                 divMelding.innerHTML = "DU FIKK " + (200 * dager - 1000) + ",- AVSLAG";
                 divMelding.style.opacity = 1;
             }
@@ -49,7 +49,7 @@ function setup() {
             if (pris > 499) {
                 pris = 500;
                 // @ts-ignore
-                divAvslag.style.opacity = 0.7;
+                divAvslag.style.opacity = 0.9;
                 divMelding.innerHTML = "DU FIKK " + (100 * dager - 500) + ",- AVSLAG";
                 divMelding.style.opacity = 1;
             }
