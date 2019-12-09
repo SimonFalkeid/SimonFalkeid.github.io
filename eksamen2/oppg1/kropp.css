@@ -1,0 +1,25 @@
+body {
+    background-color: burlywood;
+}
+
+img {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0 23%);
+}
+
+#rygg {
+    position: absolute;
+    top: 220px;
+    left: 260px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+
+#arm {
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
