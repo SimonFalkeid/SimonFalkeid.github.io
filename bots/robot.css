@@ -1,0 +1,32 @@
+#brett {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: solid gray 1px;
+}
+
+.ting {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.robot.ting {
+    background-color: red;
+}
+
+.dead.ting {
+    background-color: gray;
+}
+
+#tavle {
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    top: 10px;
+    left: 620px;
+    border: solid black 1px;
+    background-color: burlywood;
+}

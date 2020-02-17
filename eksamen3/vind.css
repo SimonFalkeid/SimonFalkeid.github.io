@@ -1,0 +1,88 @@
+body {
+    background-color: darkblue;
+}
+
+#molle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 280px;
+    left: 150px;
+}
+
+#stang {
+    position: relative;
+    top: -100px;
+    width: 10px;
+    height: 150px;
+    background-color: white;
+}
+
+#ving1 {
+    position: relative;
+    top: 10px;
+    left: -15px;
+    width: 7px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    transform-origin: left;
+    transform: rotate(120deg);
+    border: solid black 1px;
+    animation: roter1 3s linear;
+}
+
+@keyframes roter1 {
+    from {
+        transform: rotate(120deg);
+    }
+    to {
+        transform: rotate(480deg);
+    }
+}
+
+#ving2 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 7px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    transform: rotate(0deg);
+    transform-origin: left center;
+    border: solid black 1px;
+    animation: roter2 3s linear;
+}
+
+@keyframes roter2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#ving3 {
+    position: relative;
+    top: -80px;
+    left: 30px;
+    width: 7px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    transform: rotate(240deg);
+    transform-origin: 0% 50%;
+    border: solid black 1px;
+    animation: roter3 3s linear;
+}
+
+@keyframes roter3 {
+    from {
+        transform: rotate(240deg);
+    }
+    to {
+        transform: rotate(600deg);
+    }
+}

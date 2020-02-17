@@ -1,0 +1,39 @@
+body {
+    background-color: white;
+}
+
+#brett {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: solid black 1px;
+}
+
+.ting {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 100px;
+}
+
+.gul.ting {
+    background-color: yellow;
+    box-shadow: inset 0 0 2px black;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.gul.ting.hidden {
+    display: none;
+}
+
+.rod.ting {
+    background-color: red;
+    box-shadow: inset 0 0 2px black;
+    border-radius: 10px;
+}
+
+.rod.ting.hidden {
+    display: none;
+}
