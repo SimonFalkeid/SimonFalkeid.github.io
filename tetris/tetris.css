@@ -1,0 +1,52 @@
+body {
+    background-color: burlywood;
+}
+
+:root {
+    --size: 20px;
+}
+
+#brett {
+    position: relative;
+    width: calc(var(--size) * 12);
+    height: calc(var(--size) * 20);
+    border: solid black 1px;
+    background-color: whitesmoke;
+}
+
+div.brikke {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: solid black 1px;
+    width: var(--size);
+    height: var(--size);
+}
+
+div.s {
+    background-color: yellow;
+}
+
+div.z {
+    background-color: red;
+}
+
+div.o {
+    background-color: orange;
+}
+
+div.l {
+    background-color: blue;
+}
+
+div.j {
+    background-color: green;
+}
+
+div.t {
+    background-color: purple;
+}
+
+div.i {
+    background-color: pink;
+}
